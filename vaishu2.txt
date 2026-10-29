@@ -1,0 +1,24 @@
+# a) Logical left shift
+n = int('11111101', 2)
+
+print("a) Logical Left Shift")
+print("Original:", format(n, '08b'))
+
+for i in range(2):
+    n = (n << 1) & 0xFF
+    print("Step", i + 1, ":", format(n, '08b'))
+
+print("Final result:", format(n, '08b'))
+print()
+
+# b) Logical right shift
+n = int('10010100', 2)
+
+print("b) Logical Right Shift")
+print("Original:", format(n, '08b'))
+
+for i in range(2):
+    n = n >> 1
+    print("Step", i + 1, ":", format(n, '08b'))
+
+print("Final result:", format(n, '08b'))
